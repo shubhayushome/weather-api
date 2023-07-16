@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Weather App</title>
+    <style>
+      body{
+        text-align: center;
+      }
+  .gradient-background {
+  background: linear-gradient(300deg, rgb(61, 60, 60), rgb(158, 150, 150), white);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+    </style>
+  </head>
+  <body class="gradient-background">
+    <h3>Please Enter location to know Weather</h3>
+    <form action="/" method="post">
+      <label for="location">City name:</label>
+      <input type="text" name="location" placeholder="(eg. Kolkata)"></br>
+      <label for="unit">Unit     :</label>
+        <input type="text" name="unit" placeholder="(eg. metric)"></br>
+      <button type="submit" name="submit">Submit</button>
+    </form>
+
+  </body>
+</html>
